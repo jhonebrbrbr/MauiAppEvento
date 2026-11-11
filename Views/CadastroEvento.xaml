@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEvento.Views.CadastroEvento"
+             Title="CadastroEvento"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="Center" 
+            HorizontalOptions="Center">
+        <Label 
+            Text="Nome do Evento: " Padding="4"/>
+
+        <Picker x:Name="pck_NomeEvento" Title="Selecione seu evento" 
+                ItemDisplayBinding="{Binding Nome}" Margin="4"/>
+
+        <Label 
+            Text="Data de Inicio: " Padding="4"/>
+
+        <DatePicker x:Name="dtpck_InicioEvento"  Format="dd/MM/yyyy" 
+                    DateSelected="dtpck_InicioEvento_DateSelected" Margin="4"/>
+        <Label 
+            Text="Numero de Participantes: " Padding="4"/>
+        
+        <Stepper x:Name="stp_participantes"
+                             Minimum="1"
+                             Maximum="80000" />
+
+        <Label 
+            Text="Local do Evento: " Padding="4"/>
+
+        <Entry Placeholder="Digite o local do evento..." Margin="4" MaxLength="50"/>
+
+        <Label 
+            Text="Custo por participante: " Padding="4"/>
+
+        <Entry Placeholder="Digite o custo por participante..." Margin="4" MaxLength="50"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
