@@ -19,7 +19,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Padding="4   "/>
             <Label 
-                Text="{Binding Nome}"
+                Text="{Binding Descricao.Descricao}"
                 FontSize="Small"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" Padding="4   "/>

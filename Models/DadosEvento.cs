@@ -6,7 +6,7 @@ namespace MauiAppEvento.Models
 {
     public class DadosEvento
     {
-        public NomeEvento Nome { get; set; }
+        public DescricaoEvento Descricao { get; set; }
         public DateTime Data_Inicio { get; set; }
         public DateTime Data_Termino { get; set; }
         public int Numero_Participantes { get; set; }

@@ -6,11 +6,9 @@
              NavigationPage.HasNavigationBar="False">
     <VerticalStackLayout VerticalOptions="Center" 
             HorizontalOptions="Center">
-        <Label 
-            Text="Nome do Evento: " Padding="4"/>
 
         <Picker x:Name="pck_NomeEvento" Title="Selecione seu evento" 
-                ItemDisplayBinding="{Binding Nome}" Margin="4"/>
+                ItemDisplayBinding="{Binding Descricao}" Margin="4"/>
 
         <Label 
             Text="Data de Inicio: " Padding="4"/>
@@ -20,7 +18,6 @@
 
         <Label 
             Text="Data de Termino: " Padding="4"/>
-
 
         <DatePicker x:Name="dtpck_TerminoEvento"  Format="dd/MM/yyyy"
                     DateSelected="dtpck_TerminoEvento_DateSelected" Margin="4"/>
@@ -49,7 +46,8 @@
         <Label 
             Text="Custo por participante: " Padding="4"/>
 
-        <Entry x:Name="Txt_Custo_Participante" Placeholder="Digite o custo por participante..." Margin="4" MaxLength="50"/>
+        <Entry x:Name="Txt_Custo_Participante" Placeholder="Digite o custo por participante..." 
+               Margin="4" MaxLength="50" Keyboard="Numeric"/>
 
         <Button Text="Avançar" x:Name="Btn_Avancar" Margin="4" Clicked="Btn_Avancar_Clicked"/>
 

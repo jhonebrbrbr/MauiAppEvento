@@ -8,14 +8,14 @@ namespace MauiAppEvento
     public partial class App : Application
     {
 
-        public List<NomeEvento> Nome_Evento = new List<NomeEvento>
+        public List<DescricaoEvento> Descricao_Evento = new List<DescricaoEvento>
 
         {
-            new NomeEvento() { Nome = "Show Musical"},
-            new NomeEvento() { Nome = "Evento Esportivo"},
-            new NomeEvento() { Nome = "Palestras"},
-            new NomeEvento() { Nome = "Retiro Religioso"},
-            new NomeEvento() { Nome = "Teatro"}
+            new DescricaoEvento() { Descricao = "Show Musical"},
+            new DescricaoEvento() { Descricao = "Evento Esportivo"},
+            new DescricaoEvento() { Descricao = "Palestras"},
+            new DescricaoEvento() { Descricao = "Retiro Religioso"},
+            new DescricaoEvento() { Descricao = "Teatro"}
 
         };
 

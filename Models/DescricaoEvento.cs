@@ -4,8 +4,8 @@ using System.Text;
 
 namespace MauiAppEvento.Models
 {
-    public class NomeEvento
+    public class DescricaoEvento
     {
-        public string Nome { get; set; }
+        public string Descricao { get; set; }
     }
 }
