@@ -6,6 +6,6 @@ namespace MauiAppEvento.Models
 {
     public class NomeEvento
     {
-        public string Nome{ get; set; }
+        public string Nome { get; set; }
     }
 }

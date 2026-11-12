@@ -17,22 +17,41 @@
 
         <DatePicker x:Name="dtpck_InicioEvento"  Format="dd/MM/yyyy" 
                     DateSelected="dtpck_InicioEvento_DateSelected" Margin="4"/>
+
         <Label 
-            Text="Numero de Participantes: " Padding="4"/>
-        
-        <Stepper x:Name="stp_participantes"
+            Text="Data de Termino: " Padding="4"/>
+
+
+        <DatePicker x:Name="dtpck_TerminoEvento"  Format="dd/MM/yyyy"
+                    DateSelected="dtpck_TerminoEvento_DateSelected" Margin="4"/>
+
+
+        <HorizontalStackLayout>
+            <Label Text="Numero de Participantes: " Padding="4"/>
+            <Label 
+            Text="{Binding Value}"
+            BindingContext="{x:Reference stp_participantes}"
+            Padding="4"/>
+
+
+            <Stepper x:Name="stp_participantes"
                              Minimum="1"
-                             Maximum="80000" />
+                             Maximum="80000" 
+                             Increment="1"
+                     Margin="4"/>
+        </HorizontalStackLayout>
 
         <Label 
             Text="Local do Evento: " Padding="4"/>
 
-        <Entry Placeholder="Digite o local do evento..." Margin="4" MaxLength="50"/>
+        <Entry x:Name="Txt_Local_Evento" Placeholder="Digite o local do evento..." Margin="4" MaxLength="50"/>
 
         <Label 
             Text="Custo por participante: " Padding="4"/>
 
-        <Entry Placeholder="Digite o custo por participante..." Margin="4" MaxLength="50"/>
+        <Entry x:Name="Txt_Custo_Participante" Placeholder="Digite o custo por participante..." Margin="4" MaxLength="50"/>
+
+        <Button Text="Avançar" x:Name="Btn_Avancar" Margin="4" Clicked="Btn_Avancar_Clicked"/>
 
 
     </VerticalStackLayout>

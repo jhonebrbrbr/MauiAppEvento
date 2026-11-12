@@ -2,11 +2,121 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppEvento.Views.ExibicaoCadastro"
-             Title="ExibicaoCadastro">
-    <VerticalStackLayout>
+             Title="ExibicaoCadastro"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="Center" 
+            HorizontalOptions="Center">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Dados do Evento"
+            FontSize="Medium"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" Padding="4   "/>
+
+        <HorizontalStackLayout>
+            <Label 
+                Text="Nome do Evento: "
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+                Text="{Binding Nome}"
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+                Text="Data de Início: "
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+                Text="{Binding Data_Inicio, StringFormat='{0:dd/MM/yyyy}'}"
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+                Text="Data de Término: "
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+                Text="{Binding Data_Termino, StringFormat='{0:dd/MM/yyyy}'}"
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+            Text="Duração do Evento: "
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+            Text="{Binding Duracao_Evento}"
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+                Text="Numero de Participantes: "
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+                Text="{Binding Numero_Participantes}"
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+            Text="Custo por Participante: "
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+            Text="{Binding Custo_Participante}"
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+            Text="Custo Total: "
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+            Text="{Binding Custo_Total}"
+            FontSize="Small"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label 
+                Text="Local do Evento: "
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+            <Label 
+                Text="{Binding Local_Evento}"
+                FontSize="Small"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" Padding="4   "/>
+        </HorizontalStackLayout>
+
+        <Button Text="Voltar" x:Name="Btn_Voltar" Clicked="Btn_Voltar_Clicked" />
+
     </VerticalStackLayout>
 </ContentPage>

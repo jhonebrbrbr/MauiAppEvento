@@ -8,7 +8,7 @@ namespace MauiAppEvento
     public partial class App : Application
     {
 
-        public List<NomeEvento> Lista_Quartos = new List<NomeEvento>
+        public List<NomeEvento> Nome_Evento = new List<NomeEvento>
 
         {
             new NomeEvento() { Nome = "Show Musical"},
